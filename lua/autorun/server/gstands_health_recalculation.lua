@@ -15,14 +15,16 @@ local function recalculateHP(player, newMaxHealth)
     return newMaxHealth * hpPercent
 end
 
-concommand.Add("gstands_health_recalculation_enable", function(player, _, args)
+concommand.Add("gstands_health_recalculation_toggle", function(player, _, args)
     local currentValue = tonumber(file.Read("gstands_health_recalculation.txt", "DATA"))
     local newValue
 
     if currentValue == 1 then
         newValue = 0
+        PrintMessage(HUD_PRINTCENTER, "Health calculation is disabled")
     else
         newValue = 1
+        PrintMessage(HUD_PRINTCENTER, "Health calculation is enabled")
     end
 
     file.Write("gstands_health_recalculation.txt", newValue)

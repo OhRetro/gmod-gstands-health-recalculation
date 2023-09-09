@@ -6,4 +6,4 @@ if you unequip the stands with 30% of health the 1500 health, you will be given 
 
 Commands
 
-gstands_health_recalculation_enable [0 or 1] - Enable/Disable the mod.
+gstands_health_recalculation_toggle - Toggle the mod.
