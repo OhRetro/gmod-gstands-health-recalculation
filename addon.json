@@ -1,0 +1,13 @@
+{
+    "title": "gStands Health Recalculation",
+    "description": "Your health recalculates when equipping/unequipping a gStands stands.",
+    "type": "tool",
+    "tags": [
+        "cartoon",
+        "fun"
+    ],
+    "ignore": [
+        ".git/*",
+        "README.md"
+    ]
+}
